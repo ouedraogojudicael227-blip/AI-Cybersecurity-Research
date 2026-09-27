@@ -1,0 +1,33 @@
+% Master quantitative evidence table
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[a4paper,margin=1.7cm]{geometry}
+\renewcommand{\arraystretch}{1.2}
+\title{Master Table -- Quantitative Evidence}
+\author{Judicaël Ouedraogo}
+\begin{document}
+\maketitle
+\section*{Note méthodologique}
+Les résultats sont conservés avec leur contexte expérimental. Les performances obtenues sur des jeux de données, tâches ou protocoles différents ne constituent pas un classement global.
+\begin{longtable}{@{}p{0.07\textwidth}p{0.12\textwidth}p{0.14\textwidth}p{0.20\textwidth}rrrr@{}}
+\toprule
+ID & Domaine & Dataset & Modèle & Accuracy & Precision & Recall & F1 \\
+\midrule
+IDS01 & IDS/IoT & UNSW-NB15 + BoT-IoT & Autoencoder + SVM & -- & 96.2\% & 92.2\% & 94.3\% \\
+MAL01 & Malware Android & TUANDROMD & KNN & 97.65\% & -- & -- & -- \\
+MAL02 & Malware Android & TUANDROMD & SVM & 98.62\% & -- & -- & -- \\
+MAL03 & Malware Android & TUANDROMD & Decision Tree & 99.10\% & -- & -- & -- \\
+PHI01 & Phishing & UCI Phishing Websites & Random Forest & 96.7\% & 96.1\% & 98.2\% & 97.1\% \\
+BEH01 & Analyse comportementale & CICIDS2017 & Ensemble ML & 98.8\% & -- & -- & 98.7\% \\
+BEH02 & Anomalie comportementale & Benchmark étude & CNN + Bi-LSTM + Autoencoder & 98.1\% & 97.9\% & 98.3\% & 98.1\% \\
+ZD01 & Données non vues & CIC-MalMem-2022 & Random Forest + Autoencoder & 99.9892\% & 100\% & 99.9803\% & 99.9901\% \\
+ZD02 & Données non vues & CIC-MalMem-2022 & XGBoost + Autoencoder & 99.9741\% & 100\% & 99.9533\% & 99.9976\% \\
+\bottomrule
+\end{longtable}
+\section*{Règles d'interprétation}
+Les métriques absentes sont indiquées par --. Les résultats sur données non vues sont ceux du protocole expérimental de l'étude correspondante et ne sont pas généralisés à tous les zero-days.
+\end{document}
