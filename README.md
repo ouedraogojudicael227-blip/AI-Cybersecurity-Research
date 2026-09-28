@@ -1,40 +1,72 @@
 # AI & Cybersecurity Research
 
-**Documentary research study — Judicaël Ouedraogo**
+> **A documentary research study on how artificial intelligence is transforming cybersecurity — and how cybersecurity must evolve to secure AI itself.**
 
-## Title
-
-**Artificial Intelligence in Cybersecurity: Applications, Benefits, Limitations, New Risks and Future Perspectives**
+**Author:** Judicaël Ouedraogo  
+**Status:** Manuscript validated · PDF production pending
 
 ## Research question
 
-> How is artificial intelligence transforming the detection and prevention of cyber threats, and what limitations and new risks arise from its use in cybersecurity?
+> **How is artificial intelligence transforming the detection and prevention of cyber threats, and what limitations and new risks arise from its use in cybersecurity?**
 
-## Scope
+## Abstract
 
-This project examines:
+This project investigates the use of artificial intelligence in cybersecurity, with a focus on intrusion detection, malware and phishing detection, behavioral analysis, SOC/SIEM support and threat intelligence. It also examines the limitations of AI-based security systems and the security risks introduced by the models themselves, including adversarial machine learning, data poisoning, explainability, data quality and privacy.
 
-- foundations of AI and cybersecurity;
-- intrusion detection;
-- malware detection;
-- phishing detection;
-- behavioral analysis;
-- SOC / SIEM applications;
-- threat intelligence;
-- benefits and operational value;
-- false positives and false negatives;
-- data quality, bias and explainability;
-- adversarial machine learning and data poisoning;
-- privacy and model security;
-- offensive uses of AI;
-- documented case studies and quantitative results;
-- future perspectives.
+The project deliberately distinguishes **documented evidence, experimental results, interpretation and future perspectives**. Quantitative claims are not treated as universal performance indicators: each result is linked to its dataset, method and evaluation protocol.
 
-## Methodology
+## Objectives
 
-This is a documentary and analytical research project based primarily on scientific publications, academic literature, government and standards organizations, CERT/CSIRT material, international organizations, technical reports and relevant cybersecurity industry research.
+### General objective
+Analyze how AI changes cyber-threat detection and prevention while assessing its technical limitations, operational risks and future prospects.
 
-**Research rule:** no quantitative claim is included without an identifiable and verifiable source. Experimental metrics are always interpreted in the context of their dataset and evaluation protocol.
+### Specific objectives
+
+- Identify major AI applications in defensive cybersecurity.
+- Compare documented approaches and quantitative results.
+- Examine the role of data quality, evaluation metrics and generalization.
+- Analyze adversarial attacks, poisoning and other threats against AI systems.
+- Study offensive uses of AI from a cybersecurity-risk perspective.
+- Identify emerging research directions and deployment challenges.
+
+## Research methodology
+
+The study is based primarily on:
+
+- peer-reviewed scientific and academic publications;
+- government and standards organizations;
+- CERT/CSIRT and international organizations;
+- technical reports and official documentation;
+- relevant cybersecurity-industry research.
+
+### Evidence rules
+
+1. **No invented statistics or sources.**
+2. Every quantitative claim must have an identifiable source.
+3. Experimental metrics are interpreted in the context of their dataset and protocol.
+4. Accuracy is not considered sufficient on its own when class imbalance or other evaluation issues matter.
+5. Facts, experimental findings, interpretations and hypotheses are explicitly distinguished.
+6. Industry reports are used as contextual evidence, not automatically treated as peer-reviewed research.
+
+## Research scope
+
+- AI and cybersecurity foundations
+- Intrusion detection
+- Malware detection
+- Phishing detection
+- Behavioral analysis
+- SOC / SIEM
+- Threat intelligence
+- Benefits and operational value
+- False positives / false negatives
+- Data quality, bias and explainability
+- Adversarial machine learning
+- Data poisoning and model attacks
+- Privacy and model security
+- Offensive uses of AI
+- Real-world case studies
+- Quantitative evidence and visualization
+- Future perspectives
 
 ## Repository structure
 
@@ -42,7 +74,7 @@ This is a documentary and analytical research project based primarily on scienti
 AI-Cybersecurity-Research/
 ├── README.md
 ├── report/
-│   └── AI_Cybersecurity_Study.pdf        # final report; pending generation
+│   └── AI_Cybersecurity_Study.pdf
 ├── research/
 │   ├── foundations.md
 │   ├── applications.md
@@ -68,15 +100,41 @@ AI-Cybersecurity-Research/
     └── bibliography.bib
 ```
 
-## Status
+## Quantitative corpus
+
+The current `data/studies.csv` records quantitative studies covering intrusion detection, Android malware, phishing, behavioral detection and unseen/zero-day attack detection. The dataset records the **method, dataset, task, metrics, results, limitations and source identifier** for each study.
+
+> Results from different datasets and protocols must **not** be interpreted as a universal ranking of models.
+
+## Planned visual analysis
+
+The study will produce reproducible visuals where the available evidence supports them, including:
+
+- comparison of reported model metrics;
+- application-domain distribution;
+- evolution of selected research indicators over time;
+- limitations and risk taxonomy;
+- AI-assisted cybersecurity architecture;
+- AI detection and response pipeline.
+
+No chart will be presented as a global statistic unless the underlying source supports that interpretation.
+
+## Project status
 
 - [x] Research framework
+- [x] Research question and objectives
 - [x] Source collection and validation phase
 - [x] Quantitative study extraction
-- [x] Manuscript validated
+- [x] Manuscript validation
+- [x] Initial repository architecture
+- [x] README review
 - [ ] Final LaTeX/PDF production
 - [ ] Final figures and diagrams
 - [ ] Final repository audit
+
+## Quality standard
+
+This repository is intended as a **research portfolio project**, not a generic school presentation. The priority is traceability: a reader should be able to move from a claim to the underlying study, dataset, metric and source.
 
 ## Author
 
